@@ -71,15 +71,18 @@
     <h1>Adam Tobin</h1>
   </header>
 
+  <main><section><p><h2>About Me</h2></p>
+  I am qualified in AZ 900 fundamentals </main>
+  
   <main>
-    <h2>Welcome! To my homepage!</h2>
-    <p>I've created this for ease of access to my C.V and GitHub</p>
+    <h2>Links</h2>
+    <p></p>
     <button id="goBtn">C.V.</button>
     <button id="GitHublnk">GitHub</button>
+    <button id="Maillnk">Email</button>
     <p></p>
   </main>
-  <main><section><p><b>About Me</b></p>
-  I am qualified in AZ 900 fundamentals </main>
+  
     
 
   <footer>
@@ -101,6 +104,14 @@
       window.location.href = hiddenLink;
     });
   </script>
+  
+
+<script>
+  document.getElementById("Maillnk").addEventListener("click", function () {
+    const email = "adamleetobin@hotmail.co.uk";
+    window.location.href = "mailto:" + email;
+  });
+</script>
    
 
 </body>
