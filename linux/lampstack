@@ -1,0 +1,42 @@
+sudo yum install httpd php php-mysqlnd -y #Getting LAMP (and php extension)
+
+cd /etc/httpd/conf.d #Making config for apache
+
+sudo touch wordpress.conf
+
+sudo echo "<VirtualHost *:80>
+
+ServerAdmin root@localhost
+
+DocumentRoot /var/www/html/wordpress
+<Directory /var/www/html/wordpress>
+
+Options Indexes FollowSymLinks
+
+AllowOverride all
+
+Require all granted
+</Directory>
+
+ErrorLog /var/log/httpd/wordpress_error.log
+
+CustomLog /var/log/httpd/wordpress_access.log common
+</VirtualHost>" > wordpress.conf
+ 
+ 
+cd /var/www/html #getting wordpress and unzipping
+
+sudo wget https://wordpress.org/latest.tar.gz
+
+sudo tar -xvzf latest.tar.gz
+
+sudo rm latest.tar.gz
+ 
+sudo chown -Rf apache:apache ./wordpress
+
+sudo systemctl start httpd
+
+sudo systemctl enable httpd
+
+#from here, just launch localhost in browser
+ 
