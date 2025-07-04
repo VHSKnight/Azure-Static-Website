@@ -82,7 +82,19 @@
     <button id="Maillnk">Email</button>
     <p></p>
   </main>
-  
+  <body>
+    <h1>Call Azure Function</h1>
+    <button onclick="callFunction()">Click me!</button>
+    <p id="result"></p>
+
+    <script>
+      async function callFunction() {
+        const res = await fetch("functionstatichello.azurewebsites.net");
+        const text = await res.text();
+        document.getElementById("result").innerText = text;
+      }
+    </script>
+  </body>
     
 
   <footer>
