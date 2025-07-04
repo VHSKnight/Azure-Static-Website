@@ -89,7 +89,7 @@
 
     <script>
       async function callFunction() {
-        const res = await fetch("functionstatichello.azurewebsites.net");
+        const res = await fetch("/subscriptions/b82bf8c1-4bec-4bab-acab-a12581b5a28f/resourceGroups/functionstatichello/providers/Microsoft.Storage/storageAccounts/functionstatichello/blobServices/default");
         const text = await res.text();
         document.getElementById("result").innerText = text;
       }
