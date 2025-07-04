@@ -82,22 +82,10 @@
     <button id="Maillnk">Email</button>
     <p></p>
   </main>
-  <main><body>
-    <h1>Azure Function Test</h1>
-    <button onclick="callFunction()">Click me!</button>
-    <p id="result"></p>
-
-    <script>
-      async function callFunction() {
-        const res = await fetch("functionstatichello.azurewebsites.net");
-        const text = await res.text();
-        document.getElementById("result").innerText = text;
-      }
-    </script>
-  </body></main>
+  
     
 
-  <footer>
+ <footer>
     &copy; 2025 Adam Tobin. All rights reserved.
   </footer>
 
