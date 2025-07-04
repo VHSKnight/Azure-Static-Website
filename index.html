@@ -89,7 +89,7 @@
 
     <script>
       async function callFunction() {
-        const res = await fetch(functionstatichello.azurewebsites.net);
+        const res = await fetch("functionstatichello.azurewebsites.net");
         const text = await res.text();
         document.getElementById("result").innerText = text;
       }
