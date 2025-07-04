@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adam Tobin Website</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #030303;
+    }
+
+    header {
+      background-color: #8dcce9;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357abd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adam Tobin</h1>
+  </header>
+
+  <main><section><p><h2>About Me</h2></p>
+   I am on the pathway to change into a Tech career. I've recently completed a course on Microsoft Azure. In that I worked with Python, Linux, Azure and MySQL.  Through this I achieved AZ-900 fundamentals. I am also pursuing a Cyber Security, from this I've completed a Cisco Networking Essentials certification. </main>
+  
+  <main>
+    <h2>Links</h2>
+    <p></p>
+    <button id="goBtn">C.V.</button>
+    <button id="GitHublnk">GitHub</button>
+    <button id="Maillnk">Email</button>
+    <p></p>
+  </main>
+  
+    
+
+  <footer>
+    &copy; 2025 Adam Tobin. All rights reserved.
+  </footer>
+
+  <script>
+     document.getElementById("goBtn").addEventListener("click", function () {
+      // Hidden link logic
+      const hiddenLink = "https://docs.google.com/document/d/1Xal4D8uazaCrYBXIpxauM_QDlUnc7X5PTm2KBdkVkl0/edit?tab=t.0";
+      window.location.href = hiddenLink;
+    });
+  
+  </script>
+  <script>
+     document.getElementById("GitHublnk").addEventListener("click", function () {
+      // Hidden link logic
+      const hiddenLink = "https://github.com/VHSKnight";
+      window.location.href = hiddenLink;
+    });
+  </script>
+  
+
+<script>
+  document.getElementById("Maillnk").addEventListener("click", function () {
+    const email = "adamleetobin@hotmail.co.uk";
+    window.location.href = "mailto:" + email;
+  });
+</script>
+   
+
+</body>
+</html>
