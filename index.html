@@ -80,6 +80,7 @@
     <button id="goBtn">C.V.</button>
     <button id="GitHublnk">GitHub</button>
     <button id="Maillnk">Email</button>
+    <button id="LinkedInlnk">LinkedIn</button>
     <p></p>
   </main>
   
@@ -112,7 +113,16 @@
     window.location.href = "mailto:" + email;
   });
 </script>
-   
 
+<script>
+     document.getElementById("LinkedInlnk").addEventListener("click", function () {
+      // Hidden link logic
+      const hiddenLink = "https://www.linkedin.com/in/adam-tobin-a5880b385/";
+      window.location.href = hiddenLink;
+    });
+  
+  </script>
+ 
 </body>
-</html>
+
+  </html>
